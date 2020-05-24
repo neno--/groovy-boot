@@ -5,7 +5,7 @@ Origins of this feat go back to innocently looking [Stack Overflow question](htt
 
 I dedicate this to [Ellen Ullman](https://en.wikipedia.org/wiki/Ellen_Ullman), for reassuring me that it is ok to have small islands of knowledge and enormous chasms between them.
 
-# stuff tried so far:
+# stuff tried so far
 * Associate `GroovyClassLoader` with Spring Boot startup sequence.
 * Create custom in-memory URL implementation to serve `URLClassLoader` for classes generated in runtime.
 * Try to serve classes from a virtual in-memory file system using [Jimfs](https://github.com/google/jimfs).
@@ -13,7 +13,7 @@ I dedicate this to [Ellen Ullman](https://en.wikipedia.org/wiki/Ellen_Ullman), f
 * Use `URLClassLoader` to reference existing precompiled Groovy classes.
 * Compile and dump groovy classes on the fly, only to be picked by `URLClassLoader` which makes them visible to Spring Boots component scanning mechanism.
 
-# alternative:
+# alternative
 * Use `SpringApplicationBuilder.sources(Class<?>...)` to register custom components to Spring Boot (as described in [an answer](https://stackoverflow.com/a/61566251/2400849) to the previously mentioned question).
 
 # license
